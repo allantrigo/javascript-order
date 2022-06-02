@@ -1,6 +1,6 @@
-import { Sorter } from "./Sorter"
+import { Sort } from "./Sort"
 
-export class Merge extends Sorter {
+export class Merge implements Sort {
 
     mergeArrays(left: number[], right: number[]): number[] {
         const merged: number[] = []

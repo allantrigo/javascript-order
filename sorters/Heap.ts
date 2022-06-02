@@ -1,6 +1,7 @@
-import { Sorter } from "./Sorter"
+import { Sort } from "./Sort"
 
-export class Heap extends Sorter{
+
+export class Heap implements Sort {
     maxHeap(array: number[]) {
         let pivot = Math.floor(array.length / 2 - 1)
         while (pivot >= 0) {

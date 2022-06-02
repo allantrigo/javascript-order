@@ -1,6 +1,6 @@
-import { Sorter } from "./Sorter"
+import { Sort } from "./Sort"
 
-export class Quick extends Sorter{
+export class Quick implements Sort {
     quickSort(array: number[]): number[] {
         if (array.length <= 1) {
             return array
